@@ -19,7 +19,7 @@ img{
     width:40%;
     border: 1px solid black;
     padding-left: 80px;
-    background-color: rgb(34, 91, 34);
+    background: linear-gradient(to right, rgb(31, 66, 31),rgb(252, 252, 120),rgb(31, 66, 31))
 }
 h1{
     font-size: 40px;
