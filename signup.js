@@ -60,5 +60,17 @@ function SignUp(){
             return false
         }
 
+        localStorage.setItem("name",Name)
+        localStorage.setItem("email",Email)
+        localStorage.setItem("username",Username)
+        localStorage.setItem("password",Pass)
+        localStorage.setItem("confirm password",Cpass)
+
+
+        location.href="login.html"
+        return false
+
 
       }
+
+

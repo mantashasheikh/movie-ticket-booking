@@ -1,14 +1,12 @@
 #big{
     height: 100vh;
     width: 100%;
-    border: 1px solid black;
     display: flex;
 
 }
 #image{
     height: 100vh;
     width: 60%;
-    border: 1px solid black;
 }
 img{
     height: 100vh;
@@ -17,7 +15,6 @@ img{
 #signup{
     height: 100vh;
     width:40%;
-    border: 1px solid black;
     padding-left: 80px;
     background: linear-gradient(to right, rgb(31, 66, 31),rgb(247, 247, 175),rgb(31, 66, 31))
 }
