@@ -1,22 +1,22 @@
 #big{
     height: 100vh;
     width: 100%;
-    border: 1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(27, 26, 26);
    
 }
 #small{
     height: 80vh;
     width: 70%;
-    border: 1px solid black;
     display: flex;
+    box-shadow: 2px 2px 20px 20px rgb(65, 65, 84);
 }
 #image{
     height: 80vh;
     width: 50%;
-    border: 1px solid black;
+    
 }
 img{
     height: 80vh;
@@ -26,9 +26,10 @@ img{
 #login{
     height: 80vh;
     width: 50%;
-    border: 1px solid black;
     padding-left: 50px;
-    background-color: rgb(35, 35, 35)
+    background-color: rgb(35, 35, 35);
+    
+    
 }
 h1{
     font-size: 40px;
@@ -45,19 +46,32 @@ h1{
 input{
     height: 35px;
     width: 400px;
+    border-radius: 5px;
     border-color: red;
+    font-size: 20px;
 }
 #forgotPass{
     height: 40px;
     width: 400px;
-    border: 1px solid white;
     display: flex;
     justify-content: space-between;
+}
+#forgotPass p{
+    color: whitesmoke;
 }
 button{
     height: 40px;
     width: 400px;
     font-size: 20px;
+    border-radius: 5px;
     color: whitesmoke;
-    background-color: rgb(166, 33, 33);
+    background-color: red;
+}
+#par{
+    color: whitesmoke;
+    padding-left: 80px;
+}
+b{
+    color: red;
+    
 }
