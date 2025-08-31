@@ -2,38 +2,40 @@
     height: 100vh;
     width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
-#image{
-    height: 100vh;
-    width: 60%;
-}
-img{
-    height: 100vh;
-    width:100%
-}
 #signup{
-    height: 100vh;
-    width:40%;
-    padding-left: 80px;
-    background: linear-gradient(to right, rgb(31, 66, 31),rgb(247, 247, 175),rgb(31, 66, 31))
+    height: 85vh;
+    width: 60%;
+    border-color:  red ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(44, 41, 41);
+    
 }
 h1{
-    font-size: 40px;
+    font-size: 50px;
+    color: rgb(245, 111, 111);
 }
 .para{
     font-size: 25px;
+    color:wheat;
 }
 .input{
     height: 25px;
-    width: 300px;
+    width: 400px;
+    border-color: red;
+    border-radius: 5px;
     font-size: 20px;
-    box-shadow: 2px 2px 20px 10px rgb(203, 223, 239);
 }
-button{
+#btn{
     height: 30px;
     width: 200px;
+    border-radius: 5px;
     font-size: 20px;
-    border-radius: 5px ;
-
+    color: whitesmoke;
+    background-color: red;
 }
