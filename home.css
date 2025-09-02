@@ -1,0 +1,30 @@
+#big{
+    height: 100vh;
+    width: 100%;
+    border: 1px solid black;
+}
+#nav1{
+    height:100px;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+}
+#nav11{
+    height: 100px;
+    width: 500%;
+    border: 1px solid black;
+    display: flex;
+
+}
+#nav12{
+    height: 100px;
+    width: 500%;
+    border: 1px solid black;
+    display: flex;
+}
+#nav2{
+    height: 100px;
+    width: 100%;
+    border: 1px solid black;
+}
+
