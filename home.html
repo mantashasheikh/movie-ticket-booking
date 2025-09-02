@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <!-- header -->
@@ -54,10 +55,21 @@
             </div>
       </header> 
       <main>
-        <div id="home">
-            
-
-
+        <div id="home" >
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="RRR-Movie.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="hobbitMovie.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="londonMovie.jpg" alt=""></div>
+                    <div class="swiper-slide" id="slide">
+                        <p>Unlock Rs 50% Off*</p>
+                        <p>On LIVE Gigs</p>
+                    </div>
+                    
+                </div>
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+            </div>
         </div>
 
       </main>         
@@ -73,8 +85,18 @@
 
 
 
-
+    
     <script src="home.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
     
 </body>
 </html>
