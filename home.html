@@ -86,10 +86,10 @@
                 <a href="seeAll.html">See All</a> 
             </div>
             
-            <div id="recomovies" >
-                <div class="movie-slide">Resize me!</div>
-                <div class="movie-slide">Resize me!</div>
-                <div class="movie-slide">Resize me!</div>
+            <div id="recomovies" class="recomovies" >
+                <div class="movie-slide"><img src="baghi4.avif" alt=""></div>
+                <div class="movie-slide"><img src="beauty.jpg" alt=""></div>
+                <div class="movie-slide"><img src="londonMovie.jpg" alt=""></div>
                 <div class="movie-slide">Resize me!</div>
                 <div class="movie-slide">Resize me!</div>
                 <div class="movie-slide">Resize me!</div>
@@ -133,7 +133,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--swiper2-->
     <script>
-    var swiper = new Swiper('#recomovies', {
+    var swiper = new Swiper('.recomovies', {
       slidesPerView: 3,
       direction: getDirection(),
       navigation: {

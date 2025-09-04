@@ -187,9 +187,9 @@ i{
     font-size: 20px;
     color: red;
 }
-#recomovies{
+.recomovies{
     height: 70vh;
-    width:90%;
+    width:100%;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -198,7 +198,7 @@ i{
 }
 .movie-slide {
     height: 400px;
-    width: 300px;
+    width: 800px;
     border-radius:10px ;
     text-align: center;
     font-size: 18px;
@@ -208,16 +208,15 @@ i{
     align-items: center;
 }
 @media (max-width: 760px) {
-      .movie-button-next {
+    .movie-button-next {
         right: 20px;
         transform: rotate(90deg);
-      }
-
-      .movie-button-prev {
+    }
+    .movie-button-prev {
         left: 20px;
         transform: rotate(90deg);
-      }
     }
+}
 
 
 
