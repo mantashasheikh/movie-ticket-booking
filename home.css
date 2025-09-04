@@ -187,7 +187,7 @@ i{
     font-size: 20px;
     color: red;
 }
-.recomovies{
+.mySwiper2{
     height: 70vh;
     width:100%;
     border: 1px solid black;
@@ -196,9 +196,9 @@ i{
     align-items: center;
     gap: 100px;
 }
-.movie-slide {
+.swiper-slide {
     height: 400px;
-    width: 800px;
+    width: 300px;
     border-radius:10px ;
     text-align: center;
     font-size: 18px;
