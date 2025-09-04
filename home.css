@@ -167,6 +167,25 @@ i{
     height: 80vh;
     width: 100%;
     border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#see{
+    height: 100px;
+    width: 90%;
+    border: 1px solid rgb(164, 2, 2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#see h1{
+    font-size: 40px;
+}
+#see a{
+    font-size: 20px;
+    color: red;
 }
 #recomovies{
     height: 70vh;
@@ -175,13 +194,30 @@ i{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 100px;
 }
-.movie1{
+.movie-slide {
     height: 400px;
     width: 300px;
-    border: 1px solid black;
-
+    border-radius:10px ;
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+@media (max-width: 760px) {
+      .movie-button-next {
+        right: 20px;
+        transform: rotate(90deg);
+      }
+
+      .movie-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
+      }
+    }
 
 
 

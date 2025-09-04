@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> <!--icon font awsome-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <!--swiper-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
     <!-- header -->
@@ -77,19 +79,30 @@
                 <div class="swiper-button-prev"></div>
             </div>
         </div>
+
         <div id="beHome">
-            <h1>Recommended Movies</h1>
-            <div id="recomovies">
-                <div class="movie1"></div>
-                <div class="movie1"></div>
-                <div class="movie1"></div>
-                <div class="movie1"></div>
-                <div class="movie1"></div>
-
-
+            <div id="see">
+                <h1>Recommended Movies</h1>
+                <a href="seeAll.html">See All</a> 
             </div>
+            
+            <div id="recomovies" >
+                <div class="movie-slide">Resize me!</div>
+                <div class="movie-slide">Resize me!</div>
+                <div class="movie-slide">Resize me!</div>
+                <div class="movie-slide">Resize me!</div>
+                <div class="movie-slide">Resize me!</div>
+                <div class="movie-slide">Resize me!</div>
+                <div class="movie-slide">Resize me!</div>
+                <div class="movie-slide">Resize me!</div>
+                <div class="movie-slide">Resize me!</div>
+                <div class="movie-slide">Resize me!</div>
+            </div>
+            <div class="movie-button-next"></div>
+            <div class="movie-button-prev"></div>
+        </div>
 
-        </div>    
+           
       </main>         
 
 
@@ -106,7 +119,7 @@
     
     <script src="home.js"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--swiper1-->
     <script>
     var swiper = new Swiper(".mySwiper", {
       navigation: {
@@ -114,7 +127,35 @@
         prevEl: ".swiper-button-prev",
       },
     });
-  </script>
+    </script> <!--swiper1-->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--swiper2-->
+    <script>
+    var swiper = new Swiper('#recomovies', {
+      slidesPerView: 3,
+      direction: getDirection(),
+      navigation: {
+        nextEl: '.movie-button-next',
+        prevEl: '.movie-button-prev',
+      },
+      on: {
+        resize: function () {
+          swiper.changeDirection(getDirection());
+        },
+      },
+    });
+
+    function getDirection() {
+      var windowWidth = window.innerWidth;
+      var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+      return direction;
+    }
+  </script> <!--swiper2-->
+
+  
     
 </body>
 </html>
