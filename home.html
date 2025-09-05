@@ -16,8 +16,8 @@
     <!-- header -->
   
     <div id="big">
-      <header> 
         <!-- nav1 -->
+      <header>   
         <div id="nav1">
             <div id="nav11">
                 <p id="nav1Para1">book<i id="my">my</i>show</p>
@@ -56,6 +56,7 @@
 
             </div>
       </header> 
+      
       <main>
         <div id="home" >
             <div class="swiper mySwiper">
@@ -86,23 +87,23 @@
                 <a href="seeAll.html">See All</a> 
             </div>
             
-            <div id="swiper mySwiper2">
+            <div class="swiper mySwiper2">
               <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="baghi4.avif" alt=""></div>
-                <div class="swiper-slide"><img src="beauty.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="londonswiper.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="" alt=""></div>
-                <div class="swiper-slide"><img src="" alt=""></div>
-                <div class="swiper-slide"><img src="" alt=""></div>
-                <div class="swiper-slide"><img src="" alt=""></div>
-                <div class="swiper-slide"><img src="" alt=""></div>
-                <div class="swiper-slide"><img src="" alt=""></div>
-                <div class="swiper-slide"><img src="" alt=""></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
               </div>
-                
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            
         </div>
 
            
@@ -136,12 +137,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--swiper2-->
     <script>
-    var swiper = new Swiper('.recomovies', {
+    var swiper = new Swiper('.mySwiper2', {
       slidesPerView: 3,
       direction: getDirection(),
       navigation: {
-        nextEl: '.movie-button-next',
-        prevEl: '.movie-button-prev',
+        nextEl: '.mySwiper2 .swiper-button-next',
+        prevEl: '.mySwiper2 .swiper-button-prev',
       },
       on: {
         resize: function () {
