@@ -4,28 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <div id="applyform">
         <div id="apply">
-            <div id="cont1">
-                <h1>Movie Ticket Application Form</h1>
-                <img src="" alt="">
-                <p>Movie title:</p>
-                <input type="text">
-            </div>
-            <div id="cont2">
+            <form action="">
+                <div id="cont1" >
+                    <h1>Movie Ticket Application Form</h1>
+                    <img src="itsmovietime.jpg" alt="">
+                    <p>Movie title:</p>
+                    <input type="text">
+                </div>
+               <div id="cont2" class="cont">
+                    <div>
+                       <p>The date you want to attend:</p>
+                       <input type="date">
+                    </div>
+                    <div>
+                       <p>What time suits you?</p>
+                       <input type="time">
+                    </div>
 
-            </div>
-            <div id="cont3">
-
-            </div>
-            <div id="cont4">
-
-            </div>
-            <div id="cont5">
-                
-            </div>
+                </div>
+                <div id="cont3" class="cont">
+                    <div>
+                       <p>Number of tickets for adult:</p>
+                       <input type="number">
+                    </div>
+                    <div>
+                       <p>Number of tickets for children:</p>
+                       <input type="number">
+                    </div>
+                </div>
+                <div id="cont4" class="cont">
+                    <p>Email</p>
+                    <input type="email">
+                </div>
+               <div id="cont5" class="cont">
+                    <p>Reservation Name</p>
+                    <div>
+                       <input type="text" placeholder="First name">
+                       <input type="text" placeholder="Last name">
+                    </div>
+                </div>
+                <button id="btn">SUBMIT FORM</button>
+            </form>
         </div>
     </div>
     

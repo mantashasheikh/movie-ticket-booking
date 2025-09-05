@@ -1,0 +1,38 @@
+#applyform{
+    height: 200vh;
+    width: 100%;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#apply{
+    height: 190vh;
+    width: 60%;
+    border:1px solid black;
+}
+#cont1{
+    height: 60vh;
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#cont1 h1{
+    font-size: 50px;
+}
+#cont1 img{
+    height: 300px;
+    width: 300px;
+}
+#cont1 p{
+    font-size: 20px;
+}
+.cont{
+    height: 20vh;
+    width: 100%;
+    border:1px solid black;
+
+}
