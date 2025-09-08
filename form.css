@@ -115,4 +115,16 @@
     background-color: rgb(247, 123, 123);
 }
 
+table{
+    height:40px;
+    width:100%
+    
+}
+tr{
+    height: 30px;
+    width: 50px;
+    font-size: 30px;
+
+}
+
 
