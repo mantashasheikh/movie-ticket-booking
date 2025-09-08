@@ -1,4 +1,4 @@
-let getdata=async()=>{
+let submit=async()=>{
     let api="http://localhost:3000/MovieTicketBooking"
     let res = await fetch(api, {method:"GET"})
     let data = await res.json()
@@ -20,57 +20,57 @@ let getdata=async()=>{
     `
 })
 }
+ submit()
 
 
 
 
-let PostData=()=>{
+// let submit=()=>{
 
-   let Title =document.querySelector("#title").value
-   let Date =document.querySelector("#date").value
-   let Time =document.querySelector("#time").value
-   let Ticket =document.querySelector("#ticket").value
-   let Price=document.querySelector("#price").value
-   let Email =document.querySelector("#email").value
-   let Fname =document.querySelector("#fname").value
-   let Lname=document.querySelector("#lname").value
+//    let Title =document.querySelector("#title").value
+//    let Date =document.querySelector("#date").value
+//    let Time =document.querySelector("#time").value
+//    let Ticket =document.querySelector("#ticket").value
+//    let Price=document.querySelector("#price").value
+//    let Email =document.querySelector("#email").value
+//    let Fname =document.querySelector("#fname").value
+//    let Lname=document.querySelector("#lname").value
 
     
-   let api="http://localhost:3000/movieTicketBooking"
+//    let api="http://localhost:3000/movieTicketBooking"
 
-   fetch(api, {  
+//    fetch(api, {  
 
-        method:"POST",
+//         method:"POST",
          
-        header:{
-           "Content-type":"application/json"
-        },
+//         header:{
+//            "Content-type":"application/json"
+//         },
 
-        body: JSON.stringify( 
-          {
-              name:Title,
-              Booking_Date:Date,
-              time:Time,
-              No_of_tickets:Ticket,
-              Total_price:Price,
-              email:Email,
-              first_name:Fname,
-              last_name:Lname
-
-
-          }
-         )
+//         body: JSON.stringify( 
+//           {
+//               name:Title,
+//               Booking_Date:Date,
+//               time:Time,
+//               No_of_tickets:Ticket,
+//               Total_price:Price,
+//               email:Email,
+//               first_name:Fname,
+//               last_name:Lname
 
 
-     })
+//           }
+//          )
 
 
-     location.href="CRUD.html"
-     return false
-
-}
+//      })
 
 
+//      location.href="dataTable.html"
+//      return false
+
+// }
 
 
- getdata()
+
+
