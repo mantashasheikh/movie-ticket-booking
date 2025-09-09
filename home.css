@@ -98,7 +98,7 @@ i{
 /* main */
 /* body */
 #home{
-    height: 60vh;
+    height: 70vh;
     width: 100%;
     
 }
@@ -107,7 +107,7 @@ i{
       height: 60vh;
     }
 
-.swiper-slide {
+.mySwiper .swiper-slide {
     text-align: center;
     font-size: 18px;
     background: #444;
@@ -116,7 +116,7 @@ i{
     border-radius: 20px;
     }
 
-.swiper-slide img {
+.mySwiper .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
@@ -150,9 +150,8 @@ i{
 }
 
 #Conjuring img{
-    height: 500px;
-    width: 600px;
-
+    height: 100%;
+    width: 100%;
 }
 #slideapp button{
     height: 50px;
@@ -187,40 +186,26 @@ i{
     font-size: 20px;
     color: red;
 }
-.mySwiper2{
-    height: 70vh;
-    width:90%;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-}
-.mySwiper2 .swiper-wrapper{
-    height: 70vh;
-    width:100%;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
+ .swiper {
+      width: 90%;
+      height: 70vh;
+    }
 
-}
-.mySwiper2 .swiper-wrapper .swiper-slide {
-    height: 500px;
-    width: 200px;
-    border-radius:10px ;
-    text-align: center;
-    font-size: 18px;
-    background: #444;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.mySwiper2 .swiper-wrapper .swiper-slide img{
-    height: 500px;
-    width :200px;
-}
+  .mySwiper2 .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+   .mySwiper2 .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
 @media (max-width: 760px) {
     .mySwiper2 .swiper-button-next {
